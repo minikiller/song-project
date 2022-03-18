@@ -9,8 +9,10 @@ use tower_http::trace::TraceLayer;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 mod jwt;
 mod model;
-mod mydata;
-
+mod mydata {
+    pub mod handler;
+}
+ 
 static KEYS: Lazy<jwt::Keys> = Lazy::new(|| {
     let secret = std::env::var("JWT_SECRET").expect("JWT_SECRET must be set");
     jwt::Keys::new(secret.as_bytes())
@@ -73,4 +75,5 @@ async fn main() {
         .await
         .unwrap();
     // song_project::foo();
+    // first::good();
 }

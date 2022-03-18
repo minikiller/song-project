@@ -1,3 +1,17 @@
+###
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+```
+nano ~/.cargo/config
+```
+[source.crates-io]
+replace-with = 'tuna'
+
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+```
+
 ### axum
 
 https://github.com/tokio-rs/axum    
@@ -26,11 +40,16 @@ output debug info
 ### security 
 
 ### postgres setup
-> docker run \
-    --name determined-db \
-    --network determined \
+> sudo docker run  -d\
+    --name song-db \
     -p 5432:5432 \
     -v determined_db:/var/lib/postgresql/data \
     -e POSTGRES_DB=determined \
     -e POSTGRES_PASSWORD=sunlf \
     postgres:10
+
+###
+$ cargo install sqlx-cli
+
+sqlx migrate run
+
