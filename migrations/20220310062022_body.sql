@@ -5,7 +5,7 @@ create table body
 (
     id serial primary key,
     device_id INT not null,
-    content varchar(1024) not null,
+    content varchar(512) not null,
     time TIMESTAMP default now()
 );
 
