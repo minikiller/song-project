@@ -53,3 +53,8 @@ $ cargo install sqlx-cli
 
 sqlx migrate run
 
+1.需求管理 概要设计
+2.适合开发团队人数，项目规模
+3.如何走集成测试
+4.是否和语言相关
+5.git也是自研
