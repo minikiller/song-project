@@ -7,14 +7,14 @@ GET http://localhost:3000/bodys/2
 
 
 ###
-POST http://localhost:3000
+GET http://150.158.141.195:3000/bodys
 
 ###
-POST http://localhost:3000/bodys HTTP/1.1
+POST http://150.158.141.195:3000/bodys HTTP/1.1
 content-type: application/json
 
 {
-    "id":3,
+    "id":101,
     "device_id":5,
     "content": "sample"
 }
