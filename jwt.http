@@ -11,7 +11,7 @@ GET http://localhost:3000/protected
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiaGVsbG8iLCJzdWIiOiJiQGIuY29tIiwiY29tcGFueSI6IkFDTUUiLCJleHAiOjIwMDAwMDAwMDB9.HlvHZEu5dTXyzna6UxH4nAwW8YumZdZSq9t_Mdz3h3A
 
 ###
-POST http://localhost:3000/authorize HTTP/1.1
+POST http://150.158.141.195:3000/authorize HTTP/1.1
 content-type: application/json
 
 {
