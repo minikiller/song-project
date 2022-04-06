@@ -28,7 +28,17 @@ registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 ```
 $ cargo install sqlx-cli
 
+```
+### 开始同步
+
+```
 sqlx migrate run
+```
+
+### add a migrations
+
+```
+sqlx migrate add card
 ```
 
 ####  数据库表结构说明

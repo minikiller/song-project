@@ -23,9 +23,22 @@ sqlx={version="0.5.10", features=[
     "macros",
     "chrono",
 ]}
+
 dotenv="0.15.0"
 chrono={version="0.4.19",features=["serde"]}
-
+# Typed HTTP headers.
 headers = "0.3"
+# jwt
 jsonwebtoken = "8.0"
-once_cell = "1.8"
+# 
+once_cell = "1.8.0"
+anyhow = "1.0.0"
+#sql builder
+sqlb="0.0.7"
+
+# insert data to database
+[[bin]]
+name="export"
+# use sqlb to insert data
+[[bin]]
+name="try_sqlb"

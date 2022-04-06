@@ -9,9 +9,12 @@ use sqlx::postgres::{PgPool, PgPoolOptions};
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 use tower_http::trace::TraceLayer;
 use std::{net::SocketAddr, time::Duration};
+
 pub mod hello {
    pub mod first;
 }
+pub mod model;
+
 #[tokio::main]
 async fn main() {
     // tracing_subscriber::registry()
